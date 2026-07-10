@@ -5,8 +5,7 @@ dns.setDefaultResultOrder("ipv4first");
 const express = require("express");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
-
-console.log("URI =", process.env.MONGODB_URI);
+const authRoutes = require("./routes/authRoutes");
 
 dotenv.config();
 
@@ -15,6 +14,11 @@ connectDB();
 const app = express();
 
 app.use(express.json());
+
+app.use("/api/auth", authRoutes);
+app.get("/test", (req, res) => {
+  res.send("Test route working");
+});
 
 const PORT = process.env.PORT || 5000;
 
