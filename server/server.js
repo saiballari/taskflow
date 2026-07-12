@@ -5,11 +5,12 @@ const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
 
+dotenv.config();
+
 const connectDB = require("./config/db");
+
 const authRoutes = require("./routes/authRoutes");
 const taskRoutes = require("./routes/taskRoutes");
-
-dotenv.config();
 
 connectDB();
 
@@ -23,18 +24,21 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/tasks", taskRoutes);
 
-// Test Route
-app.get("/test", (req, res) => {
-  res.send("Test route working");
-});
-
 // Home Route
 app.get("/", (req, res) => {
   res.send("🚀 TaskFlow Backend is Running...");
 });
 
+// Test Route
+app.get("/test", (req, res) => {
+  res.json({
+    success: true,
+    message: "TaskFlow Backend is Running Successfully 🚀",
+  });
+});
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`🚀 Server running on port ${PORT}`);
 });
