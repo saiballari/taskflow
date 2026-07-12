@@ -1,0 +1,100 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+  background:#0B1120;
+  color:white;
+}
+
+#root{
+  width:100%;
+  min-height:100vh;
+}
+
+button{
+  transition:.3s;
+}
+
+button:hover{
+  transform:translateY(-2px);
+}
+
+input,
+textarea,
+select{
+  transition:.3s;
+  font-size:15px;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+  outline:none;
+  box-shadow:0 0 10px #10B981;
+}
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-track{
+  background:#111827;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#10B981;
+  border-radius:20px;
+}
+
+.card{
+  background:#1E293B;
+  border-radius:15px;
+  padding:20px;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 30px rgba(16,185,129,.35);
+}
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media (max-width: 768px) {
+
+  h1{
+    font-size:28px !important;
+  }
+
+  h2{
+    font-size:20px !important;
+  }
+
+  button{
+    width:100%;
+  }
+
+  input,
+  textarea,
+  select{
+    width:100% !important;
+  }
+
+  .card{
+    width:100% !important;
+  }
+
+}
+
+@media (max-width:500px){
+
+  body{
+    font-size:14px;
+  }
+
+}

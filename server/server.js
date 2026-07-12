@@ -1,13 +1,13 @@
 const dns = require("dns");
-
 dns.setDefaultResultOrder("ipv4first");
 
 const express = require("express");
 const dotenv = require("dotenv");
-const connectDB = require("./config/db");
+const cors = require("cors");
 
+const connectDB = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
-const taskRoutes = require("./routes/taskRoutes"); // 👈 Add this
+const taskRoutes = require("./routes/taskRoutes");
 
 dotenv.config();
 
@@ -15,12 +15,13 @@ connectDB();
 
 const app = express();
 
-// Middleware
+// Middlewares
+app.use(cors());
 app.use(express.json());
 
 // Routes
 app.use("/api/auth", authRoutes);
-app.use("/api/tasks", taskRoutes); 
+app.use("/api/tasks", taskRoutes);
 
 // Test Route
 app.get("/test", (req, res) => {
