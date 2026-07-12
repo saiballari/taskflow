@@ -1,10 +1,9 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://taskflow-2-u9nr.onrender.com/api",
-  headers: {
-    "Content-Type": "application/json",
-  },
+  baseURL:
+    import.meta.env.VITE_API_URL ||
+    "http://localhost:5000/api",
 });
 
 API.interceptors.request.use((req) => {
