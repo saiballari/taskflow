@@ -1,146 +1,101 @@
 <div align="center">
 
-# 🚀 TaskFlow – Full Stack MERN Task Management Application
+# 🚀 TaskFlow
 
-### Modern • Secure • Responsive • Production Ready
+### Modern Full Stack Task Management Application
 
-<p>
-A professional full-stack task management application built using the <strong>MERN Stack</strong>. TaskFlow enables users to securely manage daily tasks with JWT authentication, task prioritization, due dates, advanced filtering, analytics dashboard, and a clean responsive interface.
-</p>
+A secure, responsive, and feature-rich task management platform built using modern full-stack web technologies.
 
-<p>
+---
 
-![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
-![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js)
-![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb)
-![JWT](https://img.shields.io/badge/Auth-JWT-orange?style=for-the-badge)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-Authentication-purple?style=for-the-badge)
 ![Vercel](https://img.shields.io/badge/Frontend-Vercel-black?style=for-the-badge&logo=vercel)
-![Render](https://img.shields.io/badge/Backend-Render-46E3B7?style=for-the-badge&logo=render)
+![Render](https://img.shields.io/badge/Backend-Render-46E3B7?style=for-the-badge)
 
-</p>
+<br>
 
----
+![GitHub last commit](https://img.shields.io/github/last-commit/saiballari/taskflow?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/saiballari/taskflow?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/saiballari/taskflow?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/saiballari/taskflow?style=for-the-badge)
 
-## 🌐 Live Demo
-
-**Frontend:** https://YOUR-VERCEL-URL.vercel.app
-
-**Backend API:** https://YOUR-RENDER-URL.onrender.com
-
----
-
-# 📸 Application Screenshots
-
-## 🔐 Login Page
-
-> Add Screenshot Here
-
-<img src="screenshots/login.png" width="100%">
+</div>
 
 ---
 
-## 📝 Register Page
+# 📖 Overview
 
-> Add Screenshot Here
+TaskFlow is a modern Full Stack Task Management Application that helps users organize, prioritize, and manage their daily work efficiently.
 
-<img src="screenshots/register.png" width="100%">
+The application provides a secure authentication system, an intuitive dashboard, task analytics, search functionality, responsive design, and cloud deployment using industry-standard technologies.
 
----
-
-## 📊 Dashboard
-
-> Add Screenshot Here
-
-<img src="screenshots/dashboard.png" width="100%">
-
----
-
-## ➕ Create Task
-
-> Add Screenshot Here
-
-<img src="screenshots/create-task.png" width="100%">
-
----
-
-## ✏️ Edit Task
-
-> Add Screenshot Here
-
-<img src="screenshots/edit-task.png" width="100%">
-
----
-
-## 📈 Analytics Dashboard
-
-> Add Screenshot Here
-
-<img src="screenshots/chart.png" width="100%">
+This project demonstrates real-world software engineering practices including REST APIs, JWT Authentication, MongoDB Atlas integration, cloud deployment, responsive UI design, and full CRUD functionality.
 
 ---
 
 # ✨ Features
 
-### 🔐 Authentication
+## 🔐 Authentication
 
-- User Registration
+- Secure User Registration
 - User Login
 - JWT Authentication
-- Password Encryption using bcrypt
 - Protected Routes
+- Password Hashing using Bcrypt
 
 ---
 
-### ✅ Task Management
+## 📋 Task Management
 
 - Create Tasks
-- Update Tasks
+- Edit Tasks
 - Delete Tasks
-- View All Tasks
-
----
-
-### 🎯 Task Organization
-
-- Priority Levels
-  - 🔴 High
-  - 🟡 Medium
-  - 🟢 Low
-
+- Search Tasks
+- Task Priority Management
+- Task Status Management
 - Due Date Support
 
-- Task Status
-  - Pending
-  - Completed
-
 ---
 
-### 🔍 Search & Filtering
-
-- Search by Title
-- Search by Description
-- Filter by Status
-- Filter by Priority
-- Sort by Due Date
-
----
-
-### 📊 Dashboard Analytics
+## 📊 Dashboard
 
 - Total Tasks
 - Pending Tasks
 - Completed Tasks
 - Interactive Pie Chart
+- Productivity Overview
+- Live Statistics
 
 ---
 
-### 🎨 UI
+## 🎨 User Interface
 
-- Modern Design
-- Responsive Layout
-- Mobile Friendly
+- Premium Modern UI
+- Responsive Design
 - Glassmorphism Cards
+- Beautiful Dashboard
 - Toast Notifications
+- Mobile Friendly
+
+---
+
+# 🌐 Live Demo
+
+## 🚀 Frontend (Vercel)
+
+https://YOUR_VERCEL_URL.vercel.app
+
+## ⚙ Backend API (Render)
+
+https://taskflow-2-u9nr.onrender.com
+
+> **Note**
+>
+> The backend is hosted on Render's free plan. The first request may take around **30–60 seconds** while the server wakes up. After that, the application works normally.
 
 ---
 
@@ -149,12 +104,13 @@ A professional full-stack task management application built using the <strong>ME
 ## Frontend
 
 - React.js
-- Vite
+- JavaScript (ES6+)
+- CSS3
 - Axios
 - React Router DOM
+- React Icons
 - React Toastify
 - Recharts
-- React Icons
 
 ---
 
@@ -162,28 +118,30 @@ A professional full-stack task management application built using the <strong>ME
 
 - Node.js
 - Express.js
-- MongoDB Atlas
-- Mongoose
-- JWT
-- bcryptjs
-- dotenv
+- JWT Authentication
+- Bcrypt.js
 - CORS
+- Dotenv
+
+---
+
+## Database
+
+- MongoDB Atlas
+- Mongoose ODM
 
 ---
 
 ## Deployment
 
-Frontend → Vercel
-
-Backend → Render
-
-Database → MongoDB Atlas
+- Vercel (Frontend)
+- Render (Backend)
 
 ---
 
-# 📂 Folder Structure
+# 📂 Project Structure
 
-```
+```text
 TaskFlow
 │
 ├── client
@@ -191,8 +149,11 @@ TaskFlow
 │   │   ├── components
 │   │   ├── pages
 │   │   ├── services
-│   │   └── assets
+│   │   ├── assets
+│   │   ├── App.jsx
+│   │   └── main.jsx
 │   │
+│   ├── public
 │   └── package.json
 │
 ├── server
@@ -201,6 +162,7 @@ TaskFlow
 │   ├── middleware
 │   ├── models
 │   ├── routes
+│   ├── utils
 │   ├── server.js
 │   └── package.json
 │
@@ -209,181 +171,174 @@ TaskFlow
 
 ---
 
-# 🔒 Authentication Flow
-
-```
-User
-   │
-   ▼
-
-Register/Login
-
-   │
-   ▼
-
-JWT Token Generated
-
-   │
-   ▼
-
-Stored in Local Storage
-
-   │
-   ▼
-
-Axios Authorization Header
-
-   │
-   ▼
-
-Protected API Routes
-
-   │
-   ▼
-
-MongoDB Atlas
-```
-
----
-
-# 📦 Installation
+# 🚀 Installation
 
 ## Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/taskflow.git
+git clone https://github.com/saiballari/taskflow.git
 ```
 
-```
+---
+
+## Navigate into Project
+
+```bash
 cd taskflow
 ```
 
 ---
 
-## Backend
+## Install Backend Dependencies
 
 ```bash
 cd server
-
 npm install
+```
 
+---
+
+## Install Frontend Dependencies
+
+```bash
+cd ../client
+npm install
+```
+
+---
+
+## Configure Environment Variables
+
+Create a `.env` file inside the **server** folder.
+
+```env
+PORT=5000
+
+MONGODB_URI=your_mongodb_connection_string
+
+JWT_SECRET=your_secret_key
+```
+
+---
+
+## Start Backend
+
+```bash
+cd server
 npm start
 ```
 
 ---
 
-## Frontend
+## Start Frontend
 
 ```bash
 cd client
-
-npm install
-
 npm run dev
 ```
 
 ---
 
-# ⚙ Environment Variables
+# 🔒 Security
 
-## Server (.env)
-
-```env
-PORT=5000
-
-MONGODB_URI=YOUR_MONGODB_URI
-
-JWT_SECRET=YOUR_SECRET_KEY
-```
+- JWT Authentication
+- Protected API Routes
+- Password Hashing
+- User-specific Task Access
+- MongoDB Atlas Cloud Database
+- Secure Environment Variables
 
 ---
 
-## Client (.env)
+# 📈 Project Highlights
 
-```env
-VITE_API_URL=https://YOUR-RENDER-URL.onrender.com/api
-```
-
----
-
-# 📡 API Endpoints
-
-## Authentication
-
-| Method | Endpoint | Description |
-|----------|----------------|----------------|
-| POST | /api/auth/register | Register User |
-| POST | /api/auth/login | Login User |
+- Full Stack MERN Architecture
+- RESTful API Development
+- Authentication & Authorization
+- CRUD Operations
+- MongoDB Atlas Integration
+- Responsive UI Design
+- Cloud Deployment
+- Interactive Dashboard
+- Search & Filtering
+- Task Analytics
+- Clean Folder Structure
+- Production Ready
 
 ---
 
-## Tasks
+# 🎯 Learning Outcomes
 
-| Method | Endpoint | Description |
-|----------|----------------|----------------|
-| GET | /api/tasks | Get All Tasks |
-| POST | /api/tasks | Create Task |
-| PUT | /api/tasks/:id | Update Task |
-| DELETE | /api/tasks/:id | Delete Task |
+This project helped strengthen my understanding of:
 
----
-
-# 🚀 Project Highlights
-
-✔ JWT Authentication
-
-✔ MERN Stack Architecture
-
-✔ REST API
-
-✔ MongoDB Atlas
-
-✔ Responsive UI
-
-✔ Search & Filtering
-
-✔ Analytics Dashboard
-
-✔ Task Priorities
-
-✔ Due Dates
-
-✔ CRUD Operations
-
-✔ Production Deployment
+- React.js Development
+- Node.js & Express.js
+- MongoDB Atlas
+- REST API Design
+- JWT Authentication
+- CRUD Operations
+- State Management
+- API Integration
+- Cloud Deployment
+- Git & GitHub Workflow
+- Responsive Web Design
 
 ---
 
-# 🎯 Future Enhancements
+# 🚀 Future Enhancements
 
-- Dark Mode
-- Email Notifications
-- Drag & Drop Kanban Board
+- Dark / Light Theme
 - Calendar View
+- Drag & Drop Tasks
+- Email Verification
+- Password Reset
+- Task Categories
 - File Attachments
 - Team Collaboration
-- Task Categories
-- Recurring Tasks
-- AI Task Suggestions
+- Push Notifications
+- Activity History
+- Progressive Web App (PWA)
 
 ---
 
 # 👨‍💻 Developer
 
-**Sai Ballari**
+## Sai Ballari
 
-GitHub: https://github.com/saiballari
+**Full Stack Developer • Cybersecurity Enthusiast • Java Programmer**
 
-LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN
+### GitHub
 
-Portfolio: https://YOUR-PORTFOLIO
+https://github.com/saiballari
+
+### Portfolio
+
+https://portfoilo-website-green.vercel.app/
+
+### LinkedIn
+
+https://YOUR_LINKEDIN_PROFILE
+
+---
+
+# ⭐ Support
+
+If you found this project useful,
+
+⭐ Star this repository
+
+🍴 Fork this repository
+
+💡 Share your feedback
 
 ---
 
 <div align="center">
 
-## ⭐ If you like this project, don't forget to Star the Repository!
+## 🚀 Thank You for Visiting
 
-Made with ❤️ using the MERN Stack
+Building modern, secure, and scalable web applications with passion.
+
+**Made with ❤️ by Sai Ballari**
 
 </div>
