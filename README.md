@@ -317,7 +317,7 @@ https://portfoilo-website-green.vercel.app/
 
 ### LinkedIn
 
-https://YOUR_LINKEDIN_PROFILE
+https://www.linkedin.com/in/venkata-sai-ballari-6a9737398/
 
 ---
 
